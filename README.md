@@ -1,6 +1,5 @@
-# 见股起意 · A股题材交易知识库
 
-淘股吧博主「见股起意」（userID `8478060`）的完整内容本地库。
+完整内容本地库。
 把他的**主帖方法论**和**跟帖实战记录**全部抓下来、清洗、索引，做成一个可以离线检索的知识库。
 
 | | |
@@ -53,7 +52,7 @@
 ├── 跟帖实战速查手册.md         374 条实战原话，按 15 个主题分章
 ├── 个股与题材速查索引.md        291 只个股 / 55 个题材 / 30 个月份
 ├── tgb_all_topics.txt        主帖列表（含每篇全站跟帖总数）
-└── tgb-jian-gu-qi-yi.zip     移植包（12.8MB，含对话版）
+└── .zip     移植包（12.8MB，含对话版）
 
 ~/.workbuddy/skills/tgb-jian-gu-qi-yi/     ← 安装后的技能目录
 ├── SKILL.md                  技能说明（AI 读这个）
@@ -108,9 +107,7 @@
 ### 命令行
 
 ```bash
-# 可用解释器（系统 python 没装 requests）
-PY="C:/Users/zx744/.workbuddy/binaries/python/envs/default/Scripts/python.exe"
-SKILL="$HOME/.workbuddy/skills/tgb-jian-gu-qi-yi"
+
 
 "$PY" "$SKILL/scripts/update_kb.py"
 ```
@@ -152,7 +149,7 @@ SKILL="$HOME/.workbuddy/skills/tgb-jian-gu-qi-yi"
 
 登录态会过期，脚本第 1 步就会校验，失效时明确报错。
 
-重新获取：浏览器登录 tgb.cn → F12 → Network → 任选一个请求 →
+重新获取：浏览器登录  → F12 → Network → 任选一个请求 →
 复制 Request Headers 里的整条 `cookie` → 存到 `cookie.txt`（一行）。
 
 也可以 `--cookie-file <路径>` 或设环境变量 `TGB_COOKIE`，不用改代码。
@@ -163,7 +160,7 @@ SKILL="$HOME/.workbuddy/skills/tgb-jian-gu-qi-yi"
 
 ```bash
 # 新电脑上
-解压 tgb-jian-gu-qi-yi.zip
+解压 .zip
 双击 install.cmd          # macOS / Linux：python3 scripts/install.py
 ```
 
